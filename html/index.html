@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../imgs/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reutilizar-header-nav-footer.css">
+    <title>Index</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="item">
+            <img src="../imgs/logotipo.png" alt="logo VogueJorge" class="logo">
+            <h1 class="nombre">Vogue Jorge</h1>
+            <span class="autor">Jorge Sánchez Serrano</span>
+        </header>
+        <nav class="item">
+            <span id="filtradoSudaderas" style="cursor: pointer;">SUDADERAS</span>
+            <span id="filtradoCamisetas" style="cursor: pointer;">CAMISETAS</span>
+            <span><a href="./inicioRegistro.html">INICIO/REGISTRO</a></span>
+        </nav>
+        <main class="item">
+            <section></section>
+        </main>
+        <aside>
+            <div class="tituloCarrito"><h1>Carrito</h1></div>
+            <div id="carrito"></div>
+            <div>
+                <p>Total: <span id="total">0</span>&euro;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </div>
+        </aside>
+        <footer class="item">      
+            <div class="marca">
+                <span>VOGUE JORGE</span>
+                <div class="redesSociales">
+                    <img src="../imgs/redesSociales/instagram.png" alt="logo instagram">
+                    <img src="../imgs/redesSociales/tiktok.png" alt="logo tiktok">
+                </div>
+
+            </div>
+            <div class="ayuda">
+                <ul>
+                    <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="../html/inicioRegistro.html">Inicio sesion</a></li>
+                    <li><a href="../html/inicioRegistro.html">Registrarme</a></li>
+                </ul>
+            </div>
+            <div class="fautor">
+                <p>Creador: Jorge Sánchez Serrano</p>
+                <div class="metodosPago">
+                    <ul>
+                        <li><a href="https://www.paypal.com/es/home" target="_blank"><img src="../imgs/metodosPago/visa.png" alt="imagen visa"></a></li>
+                        <li><a href="https://www.mastercard.es/es-es.html" target="_blank"><img src="../imgs/metodosPago/mastercard.png" alt="imagen mastercard"></a></li>
+                        <li><a href="https://www.visa.es/" target="_blank"><img src="../imgs/metodosPago/paypal.png" alt="imagen paypal"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/index.js"></script>
+</body>
+</html>

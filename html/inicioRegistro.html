@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/reutilizar-header-nav-footer.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="item">
+            <img src="../imgs/logotipo.png" alt="logo VogueJorge" class="logo">
+            <h1 class="nombre">Vogue Jorge</h1>
+            <span class="autor">Jorge Sánchez Serrano</span>
+        </header>
+        <nav class="item">
+            <span><a href="./index.html">HOME</a></span>
+            <span><a href="./inicioRegistro.html">INICIO/REGISTRO</a></span>
+        </nav>
+        <main class="item">
+            <form id="idForm" action="index.html">
+                <fieldset>
+                    <legend>Registro</legend>
+                    <div class="contenido">
+                        <div class="inputs registro"><label for="idUsuario" class="centrar">Usuario</label><input type="text" name="usuario" id="idUsuario"></div>
+                        <div class="inputs registro"><label for="idNombre" class="centrar">Nombre</label><input type="text" name="nombre" id="idNombre"></div>
+                        <div class="inputs registro"><label for="idApellidos" class="centrar">Apellidos</label><input type="text" name="apellidos" id="idApellidos"></div>
+                        <div class="inputs registro inicioSesion"><label for="idEmail" class="centrar">Correo electronico</label><input type="email" name="gmail" id="idEmail" class="invalido" pattern=".*@[a-zA-Z]+\.+[a-zA-Z]+" invalid></div>
+                        <div class="inputs registro inicioSesion"><label for="idContrasena" class="centrar">Contraseña</label><input type="password" name="contrasenia" id="idContrasena" pattern=".*\d.*"></div>
+                        <div class="inputs registro"><label for="idConfContrasena" class="centrar">Confirmar Contraseña</label><input type="password" name="confirmaContrasenia" id="idConfContrasena"pattern=".*\d.*"></div>
+                        <div class="inputs registro sexo"><label for="sexo" class="centrar">Sexo:</label>
+                            <select name="sexo" id="sexo">
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="inicioSesion recordar"><label for="idRecordar">Recordar Usuario</label><input type="checkbox" name="recordar" id="idRecordar" ></div>
+                        <div class="registro"><textarea name="direccion" cols="30" rows="4" placeholder="Introduce direccion" maxlength="200" minlength="10"></textarea></div>
+                    </div>
+                    <div id="divBoton"></div>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="item">      
+            <div class="marca">
+                <span>VOGUE JORGE</span>
+                <div class="redesSociales">
+                    <img src="../imgs/redesSociales/instagram.png" alt="logo instagram">
+                    <img src="../imgs/redesSociales/tiktok.png" alt="logo tiktok">
+                </div>
+
+            </div>
+            <div class="ayuda">
+                <ul>
+                    <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="../html/inicioRegistro.html">Inicio sesion</a></li>
+                    <li><a href="../html/inicioRegistro.html">Registrarme</a></li>
+                </ul>
+            </div>
+            <div class="fautor">
+                <p>Creador: Jorge Sánchez Serrano</p>
+                <div class="metodosPago">
+                    <ul>
+                        <li><a href="https://www.paypal.com/es/home" target="_blank"><img src="../imgs/metodosPago/visa.png" alt="imagen visa"></a></li>
+                        <li><a href="https://www.mastercard.es/es-es.html" target="_blank"><img src="../imgs/metodosPago/mastercard.png" alt="imagen mastercard"></a></li>
+                        <li><a href="https://www.visa.es/" target="_blank"><img src="../imgs/metodosPago/paypal.png" alt="imagen paypal"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/inicioRegistro.js"></script>
+</body>
+</html>
